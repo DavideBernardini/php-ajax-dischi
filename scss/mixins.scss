@@ -1,0 +1,13 @@
+// flex properties
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin align-center {
+    display: flex;
+    align-items: center;
+}
+@mixin align-center-between {
+    @include align-center;
+    justify-content: space-between;
+} 

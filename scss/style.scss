@@ -1,0 +1,33 @@
+// reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// variables
+@import "./variables.scss";
+
+// mixins
+@import "./mixins.scss";
+
+// font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// common/typo
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $mainColor;
+}
+
+// header
+header {
+    @include align-center;
+    height: 70px;
+    padding-left: 16px;
+    background-color: $secondaryColor;
+    img {
+        height: 2.8125rem;
+    }
+}
+
+// main 
