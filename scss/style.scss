@@ -56,7 +56,7 @@ header {
 
 // responsive images
 // sm
-@media screen and (min-width: 36rem) {
+@media screen and (min-width: 576px) {
     .album {
         .box {
             img {
@@ -66,7 +66,7 @@ header {
     }
 }
 // md
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
     .album {
         .box {
             img {
@@ -76,7 +76,7 @@ header {
     }
 }
 // lg
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 992px) {
     .album {
         .box {
             img {
@@ -86,7 +86,7 @@ header {
     }
 }
 // xxl
-@media screen and (min-width: 87.5rem) {
+@media screen and (min-width: 1400px) {
     .album {
         .box {
             img {
