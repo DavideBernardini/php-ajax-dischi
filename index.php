@@ -25,16 +25,16 @@ include __DIR__ . "/partials/database.php";
     <main>
         <!-- container albums -->
         <div class="albums container pt-5">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3  gx-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gx-4">
                 <!-- print albums -->
                 <?php foreach ($database as $album): ?>
                     <div class="album col mb-4">
                         <div class="box p-5 p-sm-3">
-                            <img src="<?= $album["poster"]; ?>" alt="poster <?= $album["title"]; ?>" class="pt-xl-3">
+                            <img src="<?= $album["poster"]; ?>" alt="poster <?= $album["title"]; ?>">
                             <h3 class="text-white pt-5 pt-sm-4">
                                 <?= $album["title"]; ?>
                             </h3>
-                            <div class="author pt-3 pt-sm-2">
+                            <div class="author pt-3 pt-sm-0">
                                 <?= $album["author"]; ?>
                             </div>
                             <div class="year">

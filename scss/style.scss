@@ -60,7 +60,7 @@ header {
     .album {
         .box {
             img {
-                height: 50%;
+                height: 48%;
             }
         }
     }
@@ -70,7 +70,7 @@ header {
     .album {
         .box {
             img {
-                height: 45%;
+                height: 42%;
             }
         }
     }
@@ -80,17 +80,7 @@ header {
     .album {
         .box {
             img {
-                height: 55%;
-            }
-        }
-    }
-}
-// xl
-@media screen and (min-width: 75rem) {
-    .album {
-        .box {
-            img {
-                height: 60%;
+                height: 45%;
             }
         }
     }
@@ -100,7 +90,7 @@ header {
     .album {
         .box {
             img {
-                height: 65%;
+                height: 50%;
             }
         }
     }
