@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- /bootstrap -->
     <title>Vue Dischi</title>
 </head>
@@ -19,8 +19,7 @@
         <header class="px-3">
             <img src="../images/spotify-logo.png" alt="logo spotify green">
             <!-- select genres -->
-            <select name="genre_select" class="form-select" v-model="genreSelected" 
-            @change="onSelectGenre">
+            <select name="genre_select" class="form-select" v-model="genreSelected" @change="onSelectGenre">
                 <option value="" selected>
                     Genres
                 </option>
@@ -37,8 +36,7 @@
             <div class="albums container pt-5">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gx-4">
                     <!-- print albums -->
-                    <div class="album col mb-4"
-                    v-for="(album, index) in albums" :key="index">
+                    <div class="album col mb-4" v-for="(album, index) in albums" :key="index">
                         <div class="box p-5 p-sm-3">
                             <img :src="album.poster" alt="album.title">
                             <h3 class="text-white pt-5 pt-sm-4">
@@ -69,7 +67,8 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- axios -->
     <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <!-- /bootstrap js -->
     <!-- js -->

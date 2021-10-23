@@ -25,16 +25,16 @@ const app = new Vue({
     methods: {
         onSelectGenre() {
             axios.get('http://localhost/php-ajax-dischi/Vue-Axios%20variant/api/', {
-                params: {
-                    'genre': this.genreSelected
-                }
-            })
-            .then((response) => {
-                this.albums = response.data;
-            })
-            .catch((error) => {
-                console.log(error);
-            });
+                    params: {
+                        'genre': this.genreSelected
+                    }
+                })
+                .then((response) => {
+                    this.albums = response.data;
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
         }
     }
 })
