@@ -16,8 +16,19 @@
 <body>
     <div id="root">
         <!-- header -->
-        <header class="ps-3">
+        <header class="px-3">
             <img src="../images/spotify-logo.png" alt="logo spotify green">
+            <!-- select genres -->
+            <select name="genre_select" class="form-select" v-model="genreSelected" 
+            @change="onSelectGenre">
+                <option value="" selected>
+                    Genres
+                </option>
+                <option v-for="(genre, index) in genres" :key="index" :value="genre">
+                    {{genre}}
+                </option>
+            </select>
+            <!-- select genres -->
         </header>
         <!-- /header -->
         <!-- main -->

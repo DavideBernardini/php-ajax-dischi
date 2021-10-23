@@ -28,6 +28,15 @@ header {
     img {
         height: 2.8125rem;
     }
+    select {
+        margin-left: auto;
+        option:hover {
+            background-color: $secondaryColor !important;
+        }
+    }
+    .form-select {
+        width: inherit;
+    }
 }
 
 // main 
